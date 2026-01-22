@@ -1,6 +1,22 @@
 {
-  "extends": "@tsconfig/node-lts/tsconfig.json",
   "compilerOptions": {
+    "target": "es2024",
+    "lib": ["es2024", "esnext"],
+    "types": ["node"],
+
+    "skipLibCheck": true,
+
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+
+    "resolveJsonModule": true,
+
+    "sourceMap": true,
+    "esModuleInterop": true,
+
     "outDir": "./dist",
     "rootDir": "./src"
   },
